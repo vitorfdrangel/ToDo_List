@@ -1,0 +1,1 @@
+Um To do list completo, com recursos de pesquisa por palavra chave e filtragem por "todos", "feitos" e "a fazer". Possui funções de marcar como feito, editar uma tarefa ou excluir, se necessário. Responsivo para pc, laptop, tablet e smartphone.

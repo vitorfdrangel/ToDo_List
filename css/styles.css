@@ -1,0 +1,169 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #333;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url("../img/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #102f5e;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #102f5e;
+  color: #fff;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  width: 90%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* Todo header */
+.todo-container {
+  max-width: 450px;
+  margin: 6rem auto;
+  padding: 1.5rem;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+}
+
+.todo-container header {
+  padding: 0 1rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+/* todo form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+  gap: 6px;
+}
+
+#cancel-edit-btn {
+  margin: 1rem auto 0;
+  width: auto;
+}
+
+/* todo toolbar */
+#toolbar {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#search {
+  width: 70%;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+#search form {
+  display: flex;
+  gap: 3px;
+  margin-top: 0.5rem;
+}
+
+#filter {
+  width: 30%;
+}
+
+#filter-select {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* todo list */
+.todo {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background-color: #395169;
+  border-radius: 3px;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-size: italic;
+}
+
+/* Responsividade */
+/* Smartphone */
+@media (max-width: 450px) {
+  .todo-container {
+    max-width: 350px;
+  }
+}
